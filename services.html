@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>NIER | Сервисы</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+</head>
+<body>
+<div id="container">
+  <div id="page-top">
+    <div id="header-wrapper">
+      <div id="header">
+        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html">Домой</a></li>
+              <li><a href="portfolio.html">Портфолио</a></li>
+              <li><a href="services.html">Сервисы</a></li>
+              <li><a href="full-width.html">Прочее</a>
+                <ul>
+                  <li><a href="full-width.html">Фулл</a></li>
+                  <li><a href="buttons.html">Кнопки</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html" class="selected">Конткат</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <div class="tab-wrapper">
+      <ul id="tab-menu">
+        <li class="selected"><img src="style/images/icon-palette.png" alt="" /> Графический дизайн</li>
+        <li><img src="style/images/icon-art.png" alt="" /> Илюстрации</li>
+        <li><img src="style/images/icon-laptop.png" alt="" /> Веб-дизайн</li>
+        <li><img src="style/images/icon-camera.png" alt="" /> Фотографии</li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab show">
+          <h3>Графический дизайн</h3>
+          <p><img src="style/images/art/portfolio12-th.jpg" alt="" class="right"/>Описание картинки справа.</p>
+          <p>Описание.</p>
+          <h3>Пикча</h3>
+          <p><img src="style/images/art/portfolio10-th.jpg" alt="" class="left"/>Описание картинки слева.</p>
+        </div>
+        <div class="tab">
+          <h3>Илюстрация</h3>
+          <p><img src="style/images/art/portfolio11-th.jpg" alt="" class="right"/>Описание картинки справа.</p>
+          <div class="one-half">
+            <div class="one-fifth"><img src="style/images/icon1.png" /></div>
+            <div class="three-fourth last">
+              <h4>Графический дизайн</h4>
+              <p>Описание.</p>
+            </div>
+          </div>
+          <div class="one-half last">
+            <div class="one-fifth"><img src="style/images/icon2.png" /></div>
+            <div class="three-fourth last">
+              <h4>Илюстрация</h4>
+              <p>Описание.</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="divider2"></div>
+          <div class="one-half">
+            <div class="one-fifth"><img src="style/images/icon3.png" /></div>
+            <div class="three-fourth last">
+              <h4>Интерьерный дизайн</h4>
+              <p>Описание.</p>
+            </div>
+          </div>
+          <div class="one-half last">
+            <div class="one-fifth"><img src="style/images/icon4.png" /></div>
+            <div class="three-fourth last">
+              <h4>3D-дизайн</h4>
+              <p>Описание.</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="tab">
+          <h3>Веб-дизайн</h3>
+          <p><img src="style/images/art/portfolio10-th.jpg" alt="" class="left"/>Описание картинки слева.</p>
+          <p>Описание.</p>
+        </div>
+        <div class="tab">
+          <h3>Фотографии</h3>
+          <p><img src="style/images/art/portfolio9-th.jpg" alt="" class="right"/>Описание картинки справа.</p>
+          <p>Описание.</p>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="push"></div>
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <div id="copyright">
+          <p>Авторские права &copy; <a href="#">Имя домена</a> - Все права защищены | Дизайнер <a target="_blank" href="http://vk.com/mlg20209">Schurl</a></p>
+        </div>
+        <div id="socials">
+          <ul>
+            <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-dribble.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-tumblr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-flickr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+    //получение всех LI из #tabMenu UL
+    $('#tab-menu > li').click(function () {
+        //удалить выбранный класс из всех LI  
+        $('#tab-menu > li').removeClass('selected');
+        //Reassign the LI
+        $(this).addClass('selected');
+        //скрыть все DIV из .tab-content
+        $('.tab-content div.tab').slideUp('slow');
+        $('.tab-content div.tab:eq(' + $('#tab-menu > li').index(this) + ')').slideDown('slow');
+    }).mouseover(function () {
+        //добавление и удаление класса
+        $(this).addClass('mouseover');
+        $(this).removeClass('mouseout');
+    }).mouseout(function () {
+        //добавление и удаление класса
+        $(this).addClass('mouseout');
+        $(this).removeClass('mouseover');
+    });
+});
+$(function () {
+    var offset = $("#tab-menu").offset();
+    var topPadding = 15;
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > offset.top) {
+            $("#tab-menu").stop().animate({
+                marginTop: $(window).scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $("#tab-menu").stop().animate({
+                marginTop: 0
+            });
+        };
+    });
+});
+</script>
+</body>
+</html>

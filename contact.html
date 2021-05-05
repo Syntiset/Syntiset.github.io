@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>NIER | Контакт</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" /><![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="style/js/jquery.infieldlabel.min.js"></script>
+<script type="text/javascript" src="style/js/twitter.min.js"></script>
+<script type="text/javascript">$(function(){ $("label").inFieldLabels(); });</script>
+<script type="text/javascript">
+getTwitters('twitter', {
+    id: 'elemisdesign',
+    count: 1,
+    enableLinks: true,
+    ignoreReplies: false,
+    template: '<span class="twitterPrefix"><span class="twitterStatus">%text%</span>',
+    newwindow: true
+});
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="page-top">
+    <div id="header-wrapper">
+      <div id="header">
+        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="" /></a></div>
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+            <ul>
+              <li><a href="index.html">Домой</a></li>
+              <li><a href="portfolio.html">Портфолио</a></li>
+              <li><a href="services.html">Сервисы</a></li>
+              <li><a href="full-width.html">Прочее</a>
+                <ul>
+                  <li><a href="full-width.html">Фулл</a></li>
+                  <li><a href="buttons.html">Кнопки</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html" class="selected">Конткат</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper">
+    <div class="content">
+      <h3>Контактная информация</h3>
+      <p>Данные сюда</p>
+      <br />
+      <div class="contact-left">
+        <div id="contact-form">
+          <div id="note"></div>
+          <form id="ajax-contact-form" method="post" action="#">
+            <div class="labels">
+              <p>
+                <label for="name">Имя</label>
+                <br />
+                <input class="required inpt" type="text" name="name" id="name" value="" />
+              </p>
+              <p>
+                <label for="email">E-Mail</label>
+                <br />
+                <input class="required inpt" type="text" name="email" id="email" value="" />
+              </p>
+            </div>
+            <div class="comments">
+              <p>
+                <textarea class="textbox" name="message" rows="6" cols="30"></textarea>
+              </p>
+              <br />
+              <p>
+                <label for="answer">5+1=?</label>
+                <br />
+                <input class="required inpt" type="text" name="answer" id="answer" value="" />
+              </p>
+            </div>
+            <label id="load" style="display:none"></label>
+            <input id="submit-button" class="button gray stripe" type="submit" name="submit" value="Send Message" />
+          </form>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="one-half">
+          <h4>Главный офис</h4>
+          <p>ул. Нефтехимиков, д.9 <br />
+            Россия, Орск <br />
+            <br />
+            <span class="highlight3">Телефон:</span> +961 937 47-11 </p>
+        </div>
+        <div class="one-half last">
+          <h4>Филиал</h4>
+          <p>ул. Нефтехимиков, д.9 <br />
+            Россия, Орск <br />
+            <br />
+            <span class="highlight3">Телефон:</span> +8 (961) 948 35-94 </p>
+        </div>
+        <div class="clear"></div>
+        <br />
+        <iframe width="400" height="188" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://drive.google.com/open?id=1Byho9fE2LwJxWjoVoqNQJWKeLms&usp=sharing"></iframe>
+      </div>
+      <div class="clear"></div>
+      <div class="divider"></div>
+      <div id="twitter-wrapper">
+        <div id="twitter"></div>
+        <span class="username">Читать <a href="#">Schurl</a></span> </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+  <div class="push"></div>
+  <div id="footer-wrapper">
+    <div id="footer">
+      <div id="footer-content">
+        <div id="copyright">
+          <p>Авторские права &copy; <a href="#">Имя домена</a> - Все права защищены | Дизайнер <a target="_blank" href="http://vk.com/mlg20209">Schurl</a></p>
+        </div>
+        <div id="socials">
+          <ul>
+            <li><a href="#"><img src="style/images/icon-rss.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-dribble.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-tumblr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-flickr.png" alt="" /></a></li>
+            <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
